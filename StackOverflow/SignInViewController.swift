@@ -54,6 +54,13 @@ class SignInViewController: UIViewController {
         
     }
     
+    @IBAction func btnSkipOnClick(_ sender: Any) {
+        
+        UserDefaults.standard.set(nil, forKey: ACCESS_TOKEN)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "HomeNav")
+        UIApplication.shared.keyWindow?.rootViewController = vc
+    }
 
     /*
     // MARK: - Navigation

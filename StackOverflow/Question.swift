@@ -16,12 +16,12 @@ class Question: Mappable {
     var owner : Owner?
     var isAnswered : Bool?
     var viewCount : Int?
-    var protectedDate : Float?
+    var protectedDate : Double?
     var acceptedAnswerId : Int?
     var answerCount : Int?
     var score : Int?
-    var lastActivityDate : Float?
-    var creationDate : Float?
+    var lastActivityDate : Double?
+    var creationDate : Double?
     var link : String?
     var title : String?
     
